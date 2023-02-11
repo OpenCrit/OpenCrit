@@ -4,10 +4,26 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { Layout, Menu } from "antd";
 import { Pane } from "evergreen-ui";
+import type { MenuProps } from "antd";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content } = Layout;
+
+type MenuItem = Required<MenuProps>["items"][number];
+
+function getItem(label: React.ReactNode, key: React.Key): MenuItem {
+	return {
+		key,
+		label,
+	} as MenuItem;
+}
+
+const items: MenuItem[] = [
+	getItem("Post", "1"),
+	getItem("Log In", "2"),
+	getItem("Profile", "3"),
+];
 
 export default function Home() {
 	return (
@@ -22,6 +38,7 @@ export default function Home() {
 				}}
 			>
 				<div
+					id="logo"
 					style={{
 						float: "left",
 						width: 120,
@@ -31,23 +48,21 @@ export default function Home() {
 					}}
 				/>
 				<Menu
+					style={{ width: "15%", float: "right" }}
 					theme="light"
 					mode="horizontal"
 					defaultSelectedKeys={["2"]}
-					items={new Array(3).fill(null).map((_, index) => ({
-						key: String(index + 1),
-						label: `nav ${index + 1}`,
-					}))}
+					items={items}
 				/>
 			</Header>
-			<Content className="site-layout" style={{ padding: "0 350px" }}>
+			<Content
+				className="site-layout"
+				style={{ backgroundColor: "grey", padding: "0 350px" }}
+			>
 				<Pane padding={24} backgroundColor="white">
 					Content
 				</Pane>
 			</Content>
-			<Footer style={{ textAlign: "center" }}>
-				OMG ITS A WEBSITE POG
-			</Footer>
 		</Layout>
 	);
 }
