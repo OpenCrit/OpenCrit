@@ -14,13 +14,7 @@ export default function Home() {
                     Why hath you forsaken me.
                 </Pane>
             </Pane>
-            <UserInfo
-                name={''}
-                profileImage={''}
-                bio={''}
-                date={''}
-                points={0}
-            />
+            <UserInfo name="" profileImage="" bio="" date="" points={0} />
         </Pane>
     );
 }
