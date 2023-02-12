@@ -1,37 +1,32 @@
 import styles from './UserInfo.module.css';
 
-interface UserInfoProps {
-	name: string;
-	profileImage: string;
-	bio: string;
-	date: string;
-	points: number;
-}
-
-const UserInfo: React.FC<UserInfoProps> = ({
+export default function UserInfo({
 	name,
 	profileImage,
 	bio,
 	date,
 	points,
-}) => {
+}: {
+	name: String;
+	profileImage: String;
+	bio: String;
+	date: String;
+	points: Number;
+}) {
 	return (
 		<div className={styles.UserInfo}>
-			<div className={styles.profilepicAndName}>
+			<div className={styles.profilePicAndName}>
 				<img
-					src={profileImage}
-					alt={name}
+					src={profileImage as string}
 					className={styles.profilePic}
 				/>
-				<p className={styles.name}>@{name}</p>
+				<p className={styles.name}>{`@${name}`}</p>
 			</div>
 			<hr></hr>
-			<div style={{ backgroundColor: 'white' }}>Bio: {bio}</div>
+			<div className={styles.whiteBackground}>{`Bio: ${bio}`}</div>
 			<hr></hr>
-			<div style={{ backgroundColor: 'white' }}>Member since:{date}</div>
-			<div style={{ backgroundColor: 'white' }}>Points:{points}</div>
+			<div className={styles.whiteBackground}>{`Date: ${date}`}</div>
+			<div className={styles.whiteBackground}>{`Points ${points}`}</div>
 		</div>
 	);
-};
-
-export default UserInfo;
+}
