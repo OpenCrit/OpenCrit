@@ -1,11 +1,13 @@
 import Button from 'components/Button/Button';
 import Navbar from 'components/Navbar/Navbar';
+import SearchBar from 'components/SearchBar/SearchBar';
 import { Pane } from 'evergreen-ui';
 
 export default function Home() {
     return (
         <Pane>
             <Button onClick={() => {}}>hi</Button>
+            <SearchBar></SearchBar>
 
             <Pane display="flex" justifyContent="center">
                 <Pane color="white" fontSize={26} margin="25%">

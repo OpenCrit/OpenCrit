@@ -1,0 +1,9 @@
+.topContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomContainer {
+    display: flex;
+    gap: 10px;
+}
