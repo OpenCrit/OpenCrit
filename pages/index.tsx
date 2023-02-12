@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <Pane>
             <Button onClick={() => {}}>Post</Button>
-            <SearchBar></SearchBar>
+            <SearchBar />
             <Pane display="flex" justifyContent="center">
                 <Pane color="white" fontSize={26} margin="25%">
                     Why hath you forsaken me.
@@ -20,7 +20,7 @@ export default function Home() {
                 bio={''}
                 date={''}
                 points={0}
-            ></UserInfo>
+            />
         </Pane>
     );
 }
