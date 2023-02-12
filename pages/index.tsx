@@ -1,6 +1,6 @@
-import Button from "components/Button/Button";
-import Navbar from "components/Navbar/Navbar";
-import { Pane } from "evergreen-ui";
+import Button from 'components/Button/Button';
+import Navbar from 'components/Navbar/Navbar';
+import { Pane } from 'evergreen-ui';
 
 export default function Home() {
 	return (
