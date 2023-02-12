@@ -4,8 +4,6 @@ import UserInfo from 'components/UserInfo/UserInfo';
 import SearchBar from 'components/SearchBar/SearchBar';
 import { Pane } from 'evergreen-ui';
 
-// import styles from '../styles/index.css';
-
 export default function Home() {
     return (
         <Pane>
