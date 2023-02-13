@@ -49,13 +49,7 @@ export default function SearchBar() {
                 />
             </div>
             {isOpen ? (
-                <div
-                    className={styles.bottomContainer}
-                    style={{
-                        backgroundColor: '#e9e9e9',
-                        border: 'none',
-                    }}
-                >
+                <div className={styles.bottomContainer}>
                     {searchTags.map((tagObject) => (
                         <div>
                             <SearchTag color={tagObject['color']}>
