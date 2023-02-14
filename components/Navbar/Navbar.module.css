@@ -1,7 +1,29 @@
 .navbarContainer {
     display: flex;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logoContainer {
+    max-height: 200px;
+    width: 25%;
+    float: left;
+    padding-left: 5%;
+}
+
+.searchBarContainer {
+    width: 50%;
 }
 
 .buttonContainer {
     display: flex;
+    width: 25%;
+    gap: 20px;
+    justify-content: right;
+    padding-right: 5%;
 }

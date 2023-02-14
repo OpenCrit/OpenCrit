@@ -13,7 +13,7 @@ export default function Button({
     onClick: MouseEventHandler<HTMLButtonElement | HTMLDivElement>;
 }) {
     return icon ? (
-        <div onClick={onClick}>
+        <div className={styles.iconButton} onClick={onClick}>
             <FontAwesomeIcon icon={icon} />
         </div>
     ) : (
