@@ -18,7 +18,7 @@ export default function SearchBar() {
         { name: 'Design', color: '#39eccb' },
         { name: 'Video', color: '#3995ec' },
         { name: 'Fashion', color: '#393fec' },
-        { name: 'Fiber', color: '#8739ec' },
+        { name: 'Portrait', color: '#8739ec' },
         { name: 'Others', color: '#d139ec' },
     ];
 

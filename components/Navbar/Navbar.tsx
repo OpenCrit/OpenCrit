@@ -11,7 +11,7 @@ export default function Navbar() {
     return (
         <div className={styles.navbarContainer}>
             <div className={styles.logoContainer}>
-                <img src="https://media.printables.com/media/prints/375908/images/3160471_a5e402d6-017e-4791-b62c-500ea716844a/thumbs/cover/1280x960/jpeg/020ae98af02c4b6da2c8d1e1584cded3.webp" />
+                <img src="hello" />
             </div>
             <div className={styles.searchBarContainer}>
                 <SearchBar />
