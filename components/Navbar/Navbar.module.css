@@ -1,3 +1,7 @@
-.kitten {
-    color: green;
+.navbarContainer {
+    display: flex;
+}
+
+.buttonContainer {
+    display: flex;
 }
