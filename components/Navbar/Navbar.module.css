@@ -18,12 +18,12 @@
 
 .searchBarContainer {
     width: 50%;
+    justify-content: center;
 }
 
 .buttonContainer {
     display: flex;
     width: 25%;
     gap: 20px;
-    justify-content: right;
-    padding-right: 5%;
+    justify-content: center;
 }
