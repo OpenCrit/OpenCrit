@@ -7,14 +7,8 @@ import { Pane } from 'evergreen-ui';
 export default function Home() {
     return (
         <Pane>
-            <Button onClick={() => {}}>Post</Button>
-            <SearchBar />
-            <Pane display="flex" justifyContent="center">
-                <Pane color="white" fontSize={26} margin="25%">
-                    Why hath you forsaken me.
-                </Pane>
-            </Pane>
-            <UserInfo name="" profileImage="" bio="" date="" points={0} />
+            <Navbar />
+            {/* <UserInfo name="" profileImage="" bio="" date="" points={0} /> */}
         </Pane>
     );
 }
