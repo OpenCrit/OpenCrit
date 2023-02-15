@@ -1,10 +1,13 @@
 import styles from './UserSettings.module.css';
 import Button from 'components/Button/Button';
+import { useState } from 'react';
 
 export default function UserSettings() {
     const changeUserName = () => {};
     const updateBios = () => {};
     const changeProfilePic = () => {};
+
+    const [count, setCount] = useState(0);
 
     return (
         <div className={styles.settingsContainer}>
@@ -16,13 +19,14 @@ export default function UserSettings() {
                 <div className={styles.settings}>
                     <div className={styles.linkedEmail}>
                         <div className={styles.linkedEmailText}>
-                            Linked Email----------CHANGE-------------
+                            Linked Email
                         </div>
                         <div className={styles.currentLinkedEmailText}>
                             HelloIAmYouAndYouAreMe@gmail.com
+                            ----------CHANGE-------------
                         </div>
                     </div>
-                    <div className={styles.changeUsername}>
+                    <div className={styles.changeUserName}>
                         <div className={styles.changeUserNameDetails}>
                             <div className={styles.userNameText}>User Name</div>
                             <div className={styles.currentUserNameText}>
@@ -41,26 +45,28 @@ export default function UserSettings() {
                             </div>
                             <div className={styles.updateBiosDescriptionText}>
                                 A short description about yourself and your
-                                inspirations!
+                                inspirations! (Minimum 50 words)
                             </div>
-                            <div className={styles.biosBox}></div>
+                            <div>
+                                <textarea
+                                    rows={6}
+                                    cols={100}
+                                    maxLength={600}
+                                    onChange={(e) =>
+                                        setCount(e.target.value.length)
+                                    }
+                                    className={styles.biosTextBox}
+                                >
+                                    ---PULL FROM BACKEND AND CHANGE DEFAULT
+                                    CHARACTER COUNT USESTATE---
+                                </textarea>
+                                <div className={styles.charCount}>
+                                    {`${count}/600 Characters`}
+                                </div>
+                            </div>
                         </div>
                         <div className={styles.updateBiosButton}>
                             <Button onClick={updateBios}>Update</Button>
-                        </div>
-                    </div>
-                    <div className={styles.changeProfilePic}>
-                        <div className={styles.changeProfilePicDetails}>
-                            <div className={styles.changeProfilePicText}>
-                                Change Profile Picture
-                            </div>
-                            <div className={styles.changeProfilePicDetailText}>
-                                Images must be .png or .jpg format
-                            </div>
-                            <div className={styles.currentProfilePic}></div>
-                        </div>
-                        <div className={styles.changeProfilePicButton}>
-                            <Button onClick={changeProfilePic}>Change</Button>
                         </div>
                     </div>
                 </div>

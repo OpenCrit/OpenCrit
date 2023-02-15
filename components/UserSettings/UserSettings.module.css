@@ -1,0 +1,124 @@
+.settingsContainer {
+    margin-top: 20px;
+}
+
+.settingsTitle {
+    padding-left: 15%;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.settingsBody {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    min-height: 400px;
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.accountSettingsTitle {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #7178ac;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+
+.linkedEmail {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.linkedEmailText {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.currentLinkedEmailText {
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    color: grey;
+}
+
+.changeUserName {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.changeUserNameDetails {
+    width: 80%;
+}
+
+.userNameText {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.currentUserNameText {
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    color: grey;
+}
+
+.changeUserNameButton {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.updateBios {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.updateBiosDetails {
+    width: 80%;
+}
+
+.updateBiosText {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.updateBiosDescriptionText {
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    color: grey;
+}
+
+.updateBiosButton {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.biosTextBox {
+    resize: none;
+    margin-top: 10px;
+    border: 1px solid rgba(113, 120, 172, 0.2);
+    border-radius: 5px;
+}
+
+.charCount {
+    display: flex;
+    color: grey;
+}
