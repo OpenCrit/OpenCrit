@@ -13,12 +13,11 @@
     max-height: 200px;
     width: 25%;
     float: left;
-    padding-left: 5%;
 }
 
 .searchBarContainer {
+    padding-left: 15px;
     width: 50%;
-    justify-content: center;
 }
 
 .buttonContainer {
