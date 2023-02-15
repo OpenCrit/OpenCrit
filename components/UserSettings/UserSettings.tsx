@@ -51,7 +51,6 @@ export default function UserSettings() {
                                 <textarea
                                     rows={6}
                                     cols={100}
-                                    minLength={250}
                                     maxLength={600}
                                     onChange={(e) =>
                                         setCount(e.target.value.length)
