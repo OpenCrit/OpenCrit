@@ -62,7 +62,7 @@ export default function UserSettings() {
                                     CHARACTER COUNT USESTATE---
                                 </textarea>
                                 <div className={styles.charCount}>
-                                    {count}/600 Characters
+                                    {`${count}/600 Characters`}
                                 </div>
                             </div>
                         </div>
