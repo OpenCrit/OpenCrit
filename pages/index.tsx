@@ -4,6 +4,7 @@ import UserInfo from 'components/UserInfo/UserInfo';
 import SearchBar from 'components/SearchBar/SearchBar';
 import { Pane } from 'evergreen-ui';
 import PostDisplay from 'components/PostDisplay/PostDisplay';
+import { GoogleLogin } from '@react-oauth/google';
 
 export default function Home() {
     return (
@@ -19,6 +20,7 @@ export default function Home() {
                     critiques: [],
                 }}
             />
+            <GoogleLogin onSuccess={(res) => {}} />
             {/* <UserInfo name="" profileImage="" bio="" date="" points={0} /> */}
         </Pane>
     );
