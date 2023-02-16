@@ -11,7 +11,7 @@ export default function DropdownButton() {
 
     const items: MenuProps['items'] = [
         {
-            label: <a href="https://www.antgroup.com">My Profile</a>,
+            label: <a href="">My Profile</a>,
             key: '0',
         },
         {
