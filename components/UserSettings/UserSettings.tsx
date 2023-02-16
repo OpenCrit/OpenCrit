@@ -5,7 +5,6 @@ import { useState } from 'react';
 export default function UserSettings() {
     const changeUserName = () => {};
     const updateBios = () => {};
-    const changeProfilePic = () => {};
 
     const [count, setCount] = useState(0);
 
@@ -45,7 +44,7 @@ export default function UserSettings() {
                             </div>
                             <div className={styles.updateBiosDescriptionText}>
                                 A short description about yourself and your
-                                inspirations! (Minimum 50 words)
+                                inspirations! (Minimum 250 characters)
                             </div>
                             <div>
                                 <textarea
