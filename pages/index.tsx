@@ -1,7 +1,6 @@
 import Button from 'components/Button/Button';
 import Navbar from 'components/Navbar/Navbar';
 import UserInfo from 'components/UserInfo/UserInfo';
-import SearchBar from 'components/SearchBar/SearchBar';
 import { Pane } from 'evergreen-ui';
 import PostDisplay from 'components/PostDisplay/PostDisplay';
 import { GoogleLogin } from '@react-oauth/google';
@@ -22,6 +21,7 @@ export default function Home() {
             />
             <GoogleLogin onSuccess={(res) => {}} />
             {/* <UserInfo name="" profileImage="" bio="" date="" points={0} /> */}
+            <div className="test">Test</div>
         </Pane>
     );
 }

@@ -5,3 +5,21 @@ html {
 body {
     margin: 0px;
 }
+
+.signUp-signUpText {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.signUp-googleButton {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
