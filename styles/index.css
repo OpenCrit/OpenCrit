@@ -25,6 +25,13 @@ body {
     border-radius: 10px;
 }
 
+.signUp-pageBackground {
+    margin: 0px;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
 .index-signInComponent {
     position: absolute;
     top: 15%;
