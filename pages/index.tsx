@@ -1,21 +1,15 @@
-import Button from 'components/Button/Button';
 import Navbar from 'components/Navbar/Navbar';
-import UserInfo from 'components/UserInfo/UserInfo';
 import { Pane } from 'evergreen-ui';
 import PostDisplay from 'components/PostDisplay/PostDisplay';
-import {
-    CredentialResponse,
-    GoogleLogin,
-    TokenResponse,
-    useGoogleLogin,
-} from '@react-oauth/google';
+import { TokenResponse, useGoogleLogin } from '@react-oauth/google';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import { ChangeEventHandler } from 'react';
+import SignIn from 'components/SignIn/SignIn';
 
 export default function Home() {
     const [user, setUser] = useState<TokenResponse>();
     const [profile, setProfile] = useState();
+    const [signInActive, setSignInActive] = useState(false);
 
     useEffect(() => {
         if (user) {
@@ -45,7 +39,7 @@ export default function Home() {
 
     return (
         <Pane>
-            <Navbar />
+            <Navbar setSignInActive={setSignInActive} />
             <PostDisplay
                 post={{
                     author: 'owo',
@@ -56,6 +50,11 @@ export default function Home() {
                     critiques: [],
                 }}
             />
+            {signInActive ? (
+                <div>
+                    <SignIn />
+                </div>
+            ) : null}
         </Pane>
     );
 }
