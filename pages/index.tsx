@@ -39,23 +39,21 @@ export default function Home() {
         setSignInActive(false);
     };
 
-    const dimBackgroundClassname = signInActive
-        ? 'index-dimBackground'
-        : undefined;
-
     console.log(profile);
 
     return (
         <Pane>
             {signInActive ? (
-                <div className="index-signInComponent">
-                    <SignIn />
+                <div>
+                    <div className="index-signInComponent">
+                        <SignIn />
+                    </div>
+                    <div
+                        className="index-dimBackground"
+                        onClick={handleSignInClose}
+                    />
                 </div>
             ) : null}
-            <div
-                className={dimBackgroundClassname}
-                onClick={handleSignInClose}
-            />
             <div className="index-background">
                 <Navbar setSignInActive={setSignInActive} />
                 <PostDisplay
