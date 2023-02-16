@@ -2,12 +2,13 @@ import Button from 'components/Button/Button';
 import SearchBar from 'components/SearchBar/SearchBar';
 import styles from './Navbar.module.css';
 import DropdownButton from 'components/DropdownButton/DropdownButton';
-import SignIn from 'components/SignIn/SignIn';
-import { useState } from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 
-export default function Navbar() {
-    const [signInActive, setSignInActive] = useState(false);
-
+export default function Navbar({
+    setSignInActive,
+}: {
+    setSignInActive: Dispatch<SetStateAction<boolean>>;
+}) {
     const handlePost = () => {};
     const handleLogin = () => {
         setSignInActive(true);
@@ -26,11 +27,6 @@ export default function Navbar() {
                 <Button onClick={handleLogin}>Log In</Button>
                 <DropdownButton />
             </div>
-            {signInActive ? (
-                <div className={styles.signIn}>
-                    <SignIn />
-                </div>
-            ) : null}
         </div>
     );
 }
