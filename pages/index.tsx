@@ -3,9 +3,46 @@ import Navbar from 'components/Navbar/Navbar';
 import UserInfo from 'components/UserInfo/UserInfo';
 import { Pane } from 'evergreen-ui';
 import PostDisplay from 'components/PostDisplay/PostDisplay';
-import { GoogleLogin } from '@react-oauth/google';
+import {
+    CredentialResponse,
+    GoogleLogin,
+    TokenResponse,
+    useGoogleLogin,
+} from '@react-oauth/google';
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+import { ChangeEventHandler } from 'react';
 
 export default function Home() {
+    const [user, setUser] = useState<TokenResponse>();
+    const [profile, setProfile] = useState();
+
+    useEffect(() => {
+        if (user) {
+            axios
+                .get(
+                    `https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`,
+                    {
+                        headers: {
+                            Authorization: `Bearer ${user.access_token}`,
+                            Accept: 'application/json',
+                        },
+                    }
+                )
+                .then((res) => {
+                    setProfile(res.data);
+                })
+                .catch((err) => console.log(err));
+        }
+    }, [user]);
+
+    const handleGoogleLogin: any = useGoogleLogin({
+        onSuccess: (res) => setUser(res),
+        onError: (err) => console.log('Login Failed', err),
+    });
+
+    console.log(profile);
+
     return (
         <Pane>
             <Navbar />
