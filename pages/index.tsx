@@ -19,9 +19,7 @@ export default function Home() {
                     critiques: [],
                 }}
             />
-            <GoogleLogin onSuccess={(res) => {}} />
             {/* <UserInfo name="" profileImage="" bio="" date="" points={0} /> */}
-            <div className="test">Test</div>
         </Pane>
     );
 }
