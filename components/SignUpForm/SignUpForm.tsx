@@ -19,12 +19,11 @@ export default function SignUpForm() {
             <textarea
                 rows={10}
                 cols={100}
-                minLength={250}
                 maxLength={600}
                 onChange={(e) => setCount(e.target.value.length)}
                 placeholder="A short description about yourself and your inspirations!"
                 className={styles.biosTextBox}
-            ></textarea>
+            />
             <div className={styles.charCount}>{`${count}/600 Characters`}</div>
         </div>
     );
