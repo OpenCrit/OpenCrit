@@ -19,7 +19,6 @@ export default function Home() {
                     critiques: [],
                 }}
             />
-            {/* <UserInfo name="" profileImage="" bio="" date="" points={0} /> */}
         </Pane>
     );
 }
