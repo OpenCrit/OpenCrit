@@ -6,37 +6,35 @@ body {
     margin: 0px;
 }
 
+.signUp-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.signUp-container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
 .signUp-signUpText {
     display: flex;
     justify-content: center;
-    margin-top: 2%;
+    margin-top: 4%;
     font-family: sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 35px;
 }
 
-.signUp-googleButton {
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-}
-
-.signUp-pageBackground {
-    margin: 0px;
-    background-color: white;
-    height: 100%;
-    width: 100%;
-}
-
 .index-signInComponent {
     position: absolute;
     top: 15%;
-    left: 40%;
     z-index: 2;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .index-background {

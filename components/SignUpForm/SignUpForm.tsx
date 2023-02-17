@@ -1,5 +1,6 @@
 import styles from './SignUpForm.module.css';
 import { useState } from 'react';
+import { GoogleLogin } from '@react-oauth/google';
 
 export default function SignUpForm() {
     const [count, setCount] = useState(0);
@@ -25,6 +26,13 @@ export default function SignUpForm() {
                 className={styles.biosTextBox}
             />
             <div className={styles.charCount}>{`${count}/600 Characters`}</div>
+            <div className={styles.googleButton}>
+                <GoogleLogin
+                    text="signup_with"
+                    width="400"
+                    onSuccess={() => {}}
+                />
+            </div>
         </div>
     );
 }
