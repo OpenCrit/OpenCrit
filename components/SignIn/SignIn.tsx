@@ -14,7 +14,7 @@ export default function SignIn() {
             <div className={styles.signInContent}>
                 <div className={styles.signInText}>Sign In</div>
                 <div className={styles.googleButton}>
-                    <GoogleLogin onSuccess={() => {}} />
+                    <GoogleLogin width="300" onSuccess={() => {}} />
                 </div>
                 <div className={styles.orText}>OR</div>
                 <div className={styles.notPartText}>
