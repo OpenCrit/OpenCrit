@@ -1,0 +1,91 @@
+.signUpContainer {
+    height: 500px;
+    width: 350px;
+    background-color: white;
+}
+
+.paintBlue {
+    position: absolute;
+    top: 140px;
+    z-index: 0;
+}
+
+.paintRed {
+    position: absolute;
+    left: 216px;
+    top: 0;
+    z-index: 0;
+}
+
+.paintYellow {
+    position: absolute;
+    top: 377px;
+    left: 70px;
+    z-index: 1;
+}
+
+.signInText {
+    z-index: 1;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-top: 20%;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.googleButton {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084),
+        0px 2px 3px rgba(0, 0, 0, 0.168);
+    display: flex;
+    justify-content: center;
+}
+
+.orText {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.notPartText {
+    z-index: 1;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-top: 20%;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: grey;
+}
+
+.signUpText {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 5px;
+}
+
+.signUpTextStyling {
+    z-index: 1;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-top: 5px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}

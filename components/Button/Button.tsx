@@ -1,14 +1,22 @@
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { MouseEventHandler } from 'react';
 import styles from './Button.module.css';
 
 export default function Button({
     children,
+    icon,
     onClick,
 }: {
-    children: String;
-    onClick: MouseEventHandler<HTMLButtonElement>;
+    children?: String;
+    icon?: IconProp;
+    onClick: MouseEventHandler<HTMLButtonElement | HTMLDivElement>;
 }) {
-    return (
+    return icon ? (
+        <div className={styles.iconButton} onClick={onClick}>
+            <FontAwesomeIcon icon={icon} />
+        </div>
+    ) : (
         <button className={styles.button} onClick={onClick}>
             {children}
         </button>

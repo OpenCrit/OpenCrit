@@ -1,3 +1,51 @@
-* {
-	background-color: lightgrey;
+html {
+    background-color: #e9e9e9;
+}
+
+body {
+    margin: 0px;
+}
+
+.signUp-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.signUp-container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.signUp-signUpText {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.index-signInComponent {
+    position: absolute;
+    top: 15%;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.index-background {
+    position: relative;
+    z-index: 0;
+}
+
+.index-dimBackground {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.388);
 }

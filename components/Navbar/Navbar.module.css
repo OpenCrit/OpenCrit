@@ -1,3 +1,31 @@
-.kitten {
-    color: green;
+.navbarContainer {
+    display: flex;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logoContainer {
+    max-height: 200px;
+    width: 25%;
+    float: left;
+}
+
+.searchBarContainer {
+    width: 50%;
+}
+
+.buttonContainer {
+    display: flex;
+    width: 25%;
+    gap: 20px;
+    justify-content: center;
+}
+
+.signIn {
+    position: absolute;
 }

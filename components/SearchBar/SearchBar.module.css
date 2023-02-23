@@ -1,9 +1,60 @@
 .topContainer {
     display: flex;
-    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    width: 700px;
+    background: #e9e9e9;
+    align-items: center;
+    border: none;
+    border-radius: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.topContainerOpen {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    width: 700px;
+    background: #e9e9e9;
+    align-items: center;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .bottomContainer {
     display: flex;
+    width: 50%;
+    margin: 0 auto;
     gap: 10px;
+    width: 698px;
+    padding-left: 42px;
+    padding-bottom: 5px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: #e9e9e9;
+    border: 'none';
+}
+
+.searchBar {
+    width: 100%;
+    background: #e9e9e9;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 10px;
+}
+
+.searchBar:focus {
+    outline: none;
+}
+
+.dropDown {
+    float: right;
+    cursor: pointer;
+}
+
+.magnifyingGlass {
+    cursor: pointer;
 }
