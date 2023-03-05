@@ -49,3 +49,60 @@
     font-size: 12px;
     background-color: white;
 }
+
+.editBio {
+    color: #7178ac;
+    font-size: 12px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.userSettings {
+    color: #7178ac;
+    font-size: 12px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.deleteProfile {
+    color: #ff2b2b;
+    font-size: 12px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.buttonEdit {
+    color: #7178ac;
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.buttonEdit:hover {
+    background-color: #7178ac;
+    color: white;
+}
+
+.buttonDelete {
+    color: #ff2b2b;
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.buttonDelete:hover {
+    background-color: #ff2b2b;
+    color: white;
+}
