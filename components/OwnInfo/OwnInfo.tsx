@@ -1,6 +1,6 @@
-import styles from './UserInfo.module.css';
+import styles from './OwnInfo.module.css';
 
-export default function UserInfo({ user }: { user: any }) {
+export default function OwnInfo({ user }: { user: any }) {
     const { name, profileImage, bio, date, points } = user;
     return (
         <div className={styles.UserInfo}>
@@ -14,6 +14,15 @@ export default function UserInfo({ user }: { user: any }) {
             <div className={styles.bio}>{`Bio: ${bio}`}</div>
             <div className={styles.whiteBackground}>{`Date: ${date}`}</div>
             <div className={styles.whiteBackground}>{`Points ${points}`}</div>
+            <div className={styles.editBio}>
+                <button className={styles.buttonEdit}>Edit Bio</button>
+            </div>
+            <div className={styles.userSettings}>
+                <button className={styles.buttonEdit}>My Settings</button>
+            </div>
+            <div className={styles.deleteProfile}>
+                <button className={styles.buttonDelete}>DELETE Profile</button>
+            </div>
         </div>
     );
 }

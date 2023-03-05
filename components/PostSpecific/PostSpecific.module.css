@@ -1,0 +1,87 @@
+.postContainer {
+    margin-top: 20px;
+    margin-left: 8%;
+    margin-right: 5%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.postHeader {
+    color: #7178ac;
+    font-size: 12px;
+}
+
+.postTitle {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.postDesc {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.postContent {
+    display: flex;
+    justify-content: center;
+}
+
+.searchTagContainer {
+    display: flex;
+    margin-top: 8px;
+    gap: 10px;
+    padding-left: 8px;
+    padding-bottom: 5px;
+    border-radius: 0px 0px 20px 20px;
+    border: 'none';
+}
+
+.postFooter {
+    margin-top: 8px;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.critiqueHeader {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.stats {
+    color: #7178ac;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.shareButton {
+    background-color: white;
+    border: none;
+    font-family: sans-serif;
+    color: #7178ac;
+    font-size: 15px;
+}
+
+.image {
+    max-width: 80%;
+    max-height: 500px;
+}
